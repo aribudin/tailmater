@@ -16,13 +16,17 @@ npx tailwindcss -i ./src/tailwindcss/tailwind.css -o ./src/css/style.css --watch
 ```
 * Open html file in browser and start editing
 
-## Documentation site
+## Documentation
 
 Coming Soon
 
 ## Sponsors
 
 Coming Soon
+
+## Sources
+
+[Download Figma design](https://www.figma.com/community/file/1035203688168086460)
 
 ## Authors
 
