@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title  -->
+  <title>Tailmater | Tailwind Material 3 UI</title>
+
+  <!-- Development css (used in all pages) -->
+  <link rel="stylesheet" id="stylesheet" href="src/css/style.css">
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <!-- icons  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Favicon  -->
+  <link rel="icon" href="src/img/logo.png">
+</head>
+<body class="font-sans text-base font-normal text-gray-700 dark:text-gray-200 bg-surface-100 dark:bg-surfacedark-100">
+  <!-- preloader -->
+  <div class="preloader loaded-success fixed inset-0 z-50 bg-neutral-10 dark:bg-neutral-900">
+    <div class="w-full h-screen flex justify-center items-center">
+      <!-- loader -->
+      <svg class="circular-loader relative w-[100px] h-[100px]">
+        <circle class="path stroke-primary-600 dark:stroke-primary-200" cx="50" cy="50" r="20" fill="none" stroke-width="5" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+  </div>
+  
+  <header>
+    <div class="w-full h-16 fixed md:relative top-0 left-0 right-0 bg-surface-200 dark:bg-surfacedark-200 md:bg-transparent md:dark:bg-transparent flex flex-row items-center justify-between md:justify-center gap-1.5 z-50">
+      <!-- logo -->
+      <a href="https://tailmater.com" target="_blank" class="md:hidden relative px-6">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" version="1.0" viewBox="0 0 317.000000 319.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,319.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+            <path class="fill-primary-200 dark:fill-primary-600" d="M285 3092 c-70 -34 -112 -72 -151 -139 -26 -43 -28 -57 -29 -143 0 -86 3 -100 28 -144 16 -27 45 -70 66 -95 46 -55 56 -75 64 -121 10 -54 -7 -107 -51 -158 -21 -26 -54 -74 -73 -107 -32 -56 -34 -66 -34 -150 0 -83 2 -94 33 -149 18 -33 50 -79 72 -103 74 -84 73 -187 -4 -278 -23 -27 -55 -72 -72 -100 -26 -45 -29 -58 -29 -140 0 -80 3 -96 29 -144 15 -30 50 -81 76 -114 78 -96 75 -172 -10 -282 -83 -107 -95 -137 -95 -240 0 -86 2 -93 35 -150 40 -68 114 -130 174 -146 125 -34 231 -6 345 93 85 74 179 76 268 5 83 -64 121 -87 172 -103 115 -35 220 -3 351 107 84 70 176 63 273 -21 32 -27 64 -50 70 -50 6 0 18 -6 26 -13 9 -8 35 -19 57 -25 151 -43 307 34 376 186 20 44 26 141 12 198 -10 44 -62 133 -105 182 -66 75 -65 174 1 252 94 113 123 197 108 311 -8 63 -50 143 -103 199 -79 82 -75 190 10 287 25 28 45 56 45 61 0 5 9 20 19 33 24 32 39 129 29 197 -11 73 -88 202 -121 202 -5 0 -21 8 -35 18 -71 49 -215 52 -297 5 -80 -44 -90 -54 -126 -118 -31 -57 -33 -65 -34 -160 0 -113 12 -145 92 -240 48 -58 63 -92 63 -139 0 -63 -13 -97 -55 -144 -23 -26 -55 -71 -71 -101 -26 -49 -29 -63 -29 -150 0 -110 13 -142 96 -245 53 -66 65 -107 54 -187 -6 -44 -14 -57 -70 -112 -71 -72 -120 -92 -195 -82 -36 5 -59 17 -98 51 -29 25 -78 60 -109 77 -53 28 -66 31 -148 32 -84 0 -94 -2 -150 -34 -33 -19 -81 -54 -108 -77 -36 -33 -58 -44 -96 -49 -79 -11 -124 8 -196 80 -54 54 -65 70 -70 110 -13 80 0 118 70 212 73 100 90 150 83 252 -6 80 -41 155 -103 222 -75 81 -74 181 2 275 86 105 98 136 98 249 0 98 -1 101 -38 163 -21 35 -51 78 -66 95 -41 47 -51 71 -51 119 0 67 15 105 64 159 73 82 91 128 91 239 0 86 -3 100 -28 145 -39 67 -61 90 -126 127 -47 26 -69 32 -136 35 -72 4 -86 1 -140 -25z"/>
+            <path class="fill-primary-600 dark:fill-primary-200" d="M1098 3105 c-88 -24 -187 -128 -209 -219 -19 -77 -7 -168 30 -227 17 -28 31 -54 31 -58 0 -4 14 -20 31 -37 41 -38 59 -82 59 -143 0 -66 -12 -94 -65 -153 -25 -28 -45 -55 -45 -60 0 -5 -10 -24 -22 -41 -20 -28 -23 -44 -23 -127 0 -85 3 -100 27 -145 15 -27 49 -76 75 -108 43 -54 47 -64 51 -122 5 -72 -15 -124 -68 -180 -15 -16 -41 -52 -57 -80 -25 -45 -28 -60 -28 -140 0 -80 3 -96 29 -145 28 -55 72 -110 88 -110 5 0 21 -8 35 -17 68 -45 159 -55 241 -27 147 48 233 189 210 341 -9 55 -47 142 -73 163 -40 33 -78 106 -83 156 -6 67 9 108 59 169 61 73 87 124 96 185 17 111 -13 202 -103 304 -48 55 -61 103 -50 179 11 75 124 186 204 201 56 10 121 -11 176 -58 28 -23 74 -55 101 -72 46 -27 58 -29 145 -29 108 0 142 13 225 85 65 57 96 70 160 70 75 0 110 -17 172 -82 92 -99 98 -199 15 -293 -47 -53 -97 -147 -106 -197 -9 -51 10 -160 36 -205 12 -21 41 -62 66 -91 52 -62 66 -107 57 -178 -5 -44 -14 -61 -56 -109 -75 -86 -104 -154 -104 -245 0 -90 28 -156 105 -249 42 -49 51 -67 56 -113 8 -65 -14 -123 -68 -184 -86 -97 -114 -201 -83 -307 47 -163 192 -254 357 -225 168 29 271 178 247 356 -9 68 -32 111 -100 194 -87 105 -78 194 32 324 44 53 69 116 72 185 5 101 -26 176 -118 285 -39 45 -40 50 -40 119 0 70 1 73 45 129 25 31 50 65 55 74 6 9 18 28 27 42 17 26 37 125 33 170 -4 46 -24 105 -50 142 -14 20 -25 40 -25 43 0 4 -18 27 -39 51 -65 74 -67 170 -6 247 101 126 131 211 113 323 -15 100 -75 176 -174 225 -40 20 -64 24 -134 24 -95 -1 -129 -15 -245 -104 -32 -24 -76 -48 -97 -53 -74 -16 -110 -2 -245 99 -132 98 -284 80 -437 -53 -81 -70 -182 -71 -260 -3 -24 22 -47 39 -51 39 -3 0 -21 11 -39 25 -65 49 -168 65 -258 40z"/>
+          </g>
+        </svg>
+      </a>
+      <!-- title -->
+      <h2 class="text-[1.375rem] leading-7">Colors</h2>
+      <!-- light dark -->
+      <div class="md:hidden relative px-4" aria-label="Brightness" data-microtip-position="bottom" role="tooltip" >
+        <!-- light & dark -->
+        <button data-type="theme" id="lightdark" class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium hover:bg-surface-300 focus:bg-surface-400 dark:text-primary-200 dark:hover:bg-surfacedark-300 dark:focus:bg-surfacedark-400">
+          <span class="material-symbols-outlined dark-hidden">light_mode</span>
+          <span class="material-symbols-outlined dark-block">dark_mode</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex flex-row gap-4 md:pl-24 px-2 md:pr-0 pt-20 md:pt-0">
+    <!-- navigation rail -->
+    <div class="w-full md:w-24 fixed left-0 md:top-0 bottom-0 right-0 md:h-screen flex items-center flex-row md:flex-col gap-8 py-4 bg-surface-200 dark:bg-surfacedark-200 z-50">
+      <!-- logo -->
+      <a href="https://tailmater.com" target="_blank" class="hidden md:flex relative mb-8">
+        <div aria-label="Tailmater - Tailwind Material 3 UI" data-microtip-position="right" role="tooltip">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" version="1.0" viewBox="0 0 317.000000 319.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,319.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
+              <path class="fill-primary-200 dark:fill-primary-600" d="M285 3092 c-70 -34 -112 -72 -151 -139 -26 -43 -28 -57 -29 -143 0 -86 3 -100 28 -144 16 -27 45 -70 66 -95 46 -55 56 -75 64 -121 10 -54 -7 -107 -51 -158 -21 -26 -54 -74 -73 -107 -32 -56 -34 -66 -34 -150 0 -83 2 -94 33 -149 18 -33 50 -79 72 -103 74 -84 73 -187 -4 -278 -23 -27 -55 -72 -72 -100 -26 -45 -29 -58 -29 -140 0 -80 3 -96 29 -144 15 -30 50 -81 76 -114 78 -96 75 -172 -10 -282 -83 -107 -95 -137 -95 -240 0 -86 2 -93 35 -150 40 -68 114 -130 174 -146 125 -34 231 -6 345 93 85 74 179 76 268 5 83 -64 121 -87 172 -103 115 -35 220 -3 351 107 84 70 176 63 273 -21 32 -27 64 -50 70 -50 6 0 18 -6 26 -13 9 -8 35 -19 57 -25 151 -43 307 34 376 186 20 44 26 141 12 198 -10 44 -62 133 -105 182 -66 75 -65 174 1 252 94 113 123 197 108 311 -8 63 -50 143 -103 199 -79 82 -75 190 10 287 25 28 45 56 45 61 0 5 9 20 19 33 24 32 39 129 29 197 -11 73 -88 202 -121 202 -5 0 -21 8 -35 18 -71 49 -215 52 -297 5 -80 -44 -90 -54 -126 -118 -31 -57 -33 -65 -34 -160 0 -113 12 -145 92 -240 48 -58 63 -92 63 -139 0 -63 -13 -97 -55 -144 -23 -26 -55 -71 -71 -101 -26 -49 -29 -63 -29 -150 0 -110 13 -142 96 -245 53 -66 65 -107 54 -187 -6 -44 -14 -57 -70 -112 -71 -72 -120 -92 -195 -82 -36 5 -59 17 -98 51 -29 25 -78 60 -109 77 -53 28 -66 31 -148 32 -84 0 -94 -2 -150 -34 -33 -19 -81 -54 -108 -77 -36 -33 -58 -44 -96 -49 -79 -11 -124 8 -196 80 -54 54 -65 70 -70 110 -13 80 0 118 70 212 73 100 90 150 83 252 -6 80 -41 155 -103 222 -75 81 -74 181 2 275 86 105 98 136 98 249 0 98 -1 101 -38 163 -21 35 -51 78 -66 95 -41 47 -51 71 -51 119 0 67 15 105 64 159 73 82 91 128 91 239 0 86 -3 100 -28 145 -39 67 -61 90 -126 127 -47 26 -69 32 -136 35 -72 4 -86 1 -140 -25z"/>
+              <path class="fill-primary-600 dark:fill-primary-200" d="M1098 3105 c-88 -24 -187 -128 -209 -219 -19 -77 -7 -168 30 -227 17 -28 31 -54 31 -58 0 -4 14 -20 31 -37 41 -38 59 -82 59 -143 0 -66 -12 -94 -65 -153 -25 -28 -45 -55 -45 -60 0 -5 -10 -24 -22 -41 -20 -28 -23 -44 -23 -127 0 -85 3 -100 27 -145 15 -27 49 -76 75 -108 43 -54 47 -64 51 -122 5 -72 -15 -124 -68 -180 -15 -16 -41 -52 -57 -80 -25 -45 -28 -60 -28 -140 0 -80 3 -96 29 -145 28 -55 72 -110 88 -110 5 0 21 -8 35 -17 68 -45 159 -55 241 -27 147 48 233 189 210 341 -9 55 -47 142 -73 163 -40 33 -78 106 -83 156 -6 67 9 108 59 169 61 73 87 124 96 185 17 111 -13 202 -103 304 -48 55 -61 103 -50 179 11 75 124 186 204 201 56 10 121 -11 176 -58 28 -23 74 -55 101 -72 46 -27 58 -29 145 -29 108 0 142 13 225 85 65 57 96 70 160 70 75 0 110 -17 172 -82 92 -99 98 -199 15 -293 -47 -53 -97 -147 -106 -197 -9 -51 10 -160 36 -205 12 -21 41 -62 66 -91 52 -62 66 -107 57 -178 -5 -44 -14 -61 -56 -109 -75 -86 -104 -154 -104 -245 0 -90 28 -156 105 -249 42 -49 51 -67 56 -113 8 -65 -14 -123 -68 -184 -86 -97 -114 -201 -83 -307 47 -163 192 -254 357 -225 168 29 271 178 247 356 -9 68 -32 111 -100 194 -87 105 -78 194 32 324 44 53 69 116 72 185 5 101 -26 176 -118 285 -39 45 -40 50 -40 119 0 70 1 73 45 129 25 31 50 65 55 74 6 9 18 28 27 42 17 26 37 125 33 170 -4 46 -24 105 -50 142 -14 20 -25 40 -25 43 0 4 -18 27 -39 51 -65 74 -67 170 -6 247 101 126 131 211 113 323 -15 100 -75 176 -174 225 -40 20 -64 24 -134 24 -95 -1 -129 -15 -245 -104 -32 -24 -76 -48 -97 -53 -74 -16 -110 -2 -245 99 -132 98 -284 80 -437 -53 -81 -70 -182 -71 -260 -3 -24 22 -47 39 -51 39 -3 0 -21 11 -39 25 -65 49 -168 65 -258 40z"/>
+            </g>
+          </svg>
+        </div>
+      </a>
+
+      <!-- list menu -->
+      <div class="w-full md:w-auto justify-center flex flex-row md:flex-col items-center md:gap-4">
+        <a href="index.html" class="group min-h-[56px] w-1/4 md:w-auto flex flex-col items-center justify-center px-0 gap-1">
+          <div class="relative w-14 h-8 hover-icon group-hover:bg-secondary-100 dark:group-hover:bg-secondary-700 group-hover:bg-opacity-80 dark:group-hover:bg-opacity-80 flex items-center justify-center rounded-2xl">
+            <span class="material-symbols-outlined">widgets</span>
+          </div>
+          <p class="text-xs text-neutral-900 dark:text-neutral-100 tracking-[.0416em] leading-tight">Components</p>
+        </a>
+
+        <a href="colors.html" class="group active min-h-[56px] w-1/4 md:w-auto flex flex-col items-center justify-center px-0 gap-1">
+          <div class="relative w-14 h-8 hover-icon group-hover:bg-secondary-100 dark:group-hover:bg-secondary-700 group-hover:bg-opacity-80 dark:group-hover:bg-opacity-80 flex items-center justify-center rounded-2xl">
+            <span class="material-symbols-outlined">format_paint</span>
+          </div>
+          <p class="text-xs text-neutral-900 dark:text-neutral-100 tracking-[.0416em] leading-tight">Colors</p>
+        </a>
+
+        <a href="typography.html" class="group min-h-[56px] w-1/4 md:w-auto flex flex-col items-center justify-center px-0 gap-1">
+          <div class="relative w-14 h-8 hover-icon group-hover:bg-secondary-100 dark:group-hover:bg-secondary-700 group-hover:bg-opacity-80 dark:group-hover:bg-opacity-80 flex items-center justify-center rounded-2xl">
+            <span class="material-symbols-outlined">format_size</span>
+          </div>
+          <p class="text-xs text-neutral-900 dark:text-neutral-100 tracking-[.0416em] leading-tight">Typography</p>
+        </a>
+
+        <a href="elevation.html" class="group min-h-[56px] w-1/4 md:w-auto flex flex-col items-center justify-center px-0 gap-1">
+            <div class="relative w-14 h-8 hover-icon group-hover:bg-secondary-100 dark:group-hover:bg-secondary-700 group-hover:bg-opacity-80 dark:group-hover:bg-opacity-80 flex items-center justify-center rounded-2xl">
+              <span class="material-symbols-outlined">invert_colors</span>
+            </div>
+            <p class="text-xs text-neutral-900 dark:text-neutral-100 tracking-[.0416em] leading-tight">Elevation</p>
+          </a>
+      </div>
+      
+      <!-- light dark -->
+      <div class="hidden md:flex flex-col items-center gap-3 mt-auto">
+        <div class="relative" aria-label="Brightness" data-microtip-position="top" role="tooltip">
+          <!-- light & dark -->
+          <button data-type="theme" id="lightdark" class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium hover:bg-surface-300 focus:bg-surface-400 dark:text-primary-200 dark:hover:bg-surfacedark-300 dark:focus:bg-surfacedark-400">
+            <span class="material-symbols-outlined dark-hidden">light_mode</span>
+            <span class="material-symbols-outlined dark-block">dark_mode</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="flex flex-col w-full gap-12 md:gap-2 overflow-hidden">
+      <div class="flex flex-wrap w-full flex-col gap-8 md:p-10 bg-surface-100 dark:bg-surfacedark-100  rounded-2xl">
+        <div class="bg-neutral-10 dark:bg-neutral-900 p-6 md:p-8 border border-gray-200 dark:border-gray-700 rounded-2xl">
+          <div class="flex flex-col space-y-16">
+            <div class="flex flex-col space-y-4">
+              <!-- primary -->
+              <div>
+                <p class="text-lg mb-3">Primary Color</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-10 bg-primary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-10 bg-primary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-10 bg-primary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-10 bg-primary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-10 bg-primary-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-10</span>
+                  </div>
+                </div>
+              </div>
+            
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-primary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">Primary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-600 bg-white">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Primary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-white</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-900 bg-primary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-100 bg-primary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-900</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-800 bg-primary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Primary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-200 bg-primary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Primary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-100 bg-primary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-primary-700 bg-primary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-primary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-primary-100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- secondary -->
+              <div>
+                <p class="text-lg mb-3">Secondary</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-10 bg-secondary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-10 bg-secondary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-10 bg-secondary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-10 bg-secondary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-10 bg-secondary-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-secondary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">Secondary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-600 bg-white">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Secondary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-white</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-900 bg-secondary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-100 bg-secondary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-900</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-800 bg-secondary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Secondary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-200 bg-secondary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Secondary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-100 bg-secondary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-secondary-700 bg-secondary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-secondary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-secondary-100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- tertiary -->
+              <div>
+                <p class="text-lg mb-3">Tertiary</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-10 bg-tertiary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-10 bg-tertiary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-10 bg-tertiary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-10 bg-tertiary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-10 bg-tertiary-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-tertiary-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">Tertiary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-600 bg-white">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Tertiary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-white</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-900 bg-tertiary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-100 bg-tertiary-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-900</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-800 bg-tertiary-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Tertiary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-200 bg-tertiary-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Tertiary</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-100 bg-tertiary-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-tertiary-700 bg-tertiary-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-tertiary-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-tertiary-100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- error -->
+              <div>
+                <p class="text-lg mb-3">Error</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-10 bg-error-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-10 bg-error-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-10 bg-error-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-10 bg-error-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-10 bg-error-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-error-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">Error</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-600 bg-white">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Error</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-white</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-900 bg-error-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-100 bg-error-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-900</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-800 bg-error-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Error</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-200 bg-error-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Error</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-100 bg-error-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-error-700 bg-error-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-error-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-error-100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- Neutral -->
+              <div>
+                <p class="text-lg mb-3">Neutral</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-10 bg-neutral-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-10 bg-neutral-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-10 bg-neutral-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-10 bg-neutral-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-10 bg-neutral-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-neutral-900 bg-neutral-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-neutral-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-10</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-neutral-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">Body</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-10</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-neutral-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Body</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-neutral-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-10</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-neutral-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-900</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-neutral-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">Body</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-neutral-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Body</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-neutral-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-neutral-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-neutral-100</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- Gray -->
+              <div>
+                <p class="text-lg mb-3">Gray (Neutral Variant)</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-black">
+                    <span class="text-xs tracking-[.0416em] font-medium">0</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-black</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-gray-900">
+                    <span class="text-xs tracking-[.0416em] font-medium">10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-900</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-900</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-gray-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">20</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-800</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-gray-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">30</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-700</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-gray-600">
+                    <span class="text-xs tracking-[.0416em] font-medium">40</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-600</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-600</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-10 bg-gray-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-500</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">60</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-400</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">70</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-300</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">80</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-200</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">90</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">95</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-50</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-gray-10">
+                    <span class="text-xs tracking-[.0416em] font-medium">99</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-gray-10</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-10</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-900 bg-white">
+                    <span class="text-xs tracking-[.0416em] font-medium">100</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-white</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Light Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-gray-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-gray-700">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Surface</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-700</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-gray-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">Outline</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-500</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-gray-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Outline</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-100</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-lg mb-3">Dark Theme</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-gray-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">Gray</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-800</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-gray-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">On gray</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-black bg-gray-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-black</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-white bg-gray-800">
+                    <span class="text-xs tracking-[.0416em] font-medium">On Container</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">text-white</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-gray-800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <!-- Surfaces - Light -->
+              <div>
+                <p class="text-lg mb-3">Surfaces - Light</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +1</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +2</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +3</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +4</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-gray-800 bg-surface-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +5</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surface-500</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Surfaces - Dark -->
+              <div>
+                <p class="text-lg mb-3">Surfaces - Dark</p>
+                <div class="flex-wrap flex">
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-50">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-50</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-100">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +1</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-100</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-200">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +2</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-200</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-300">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +3</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-300</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-400">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +4</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-400</span>
+                  </div>
+                  <div class="flex flex-col space-y-2 justify-between w-full sm:w-1/2 md:w-40 p-5 mb-1 text-indigo-100 bg-surfacedark-500">
+                    <span class="text-xs tracking-[.0416em] font-medium">Surfaces at +5</span>
+                    <span class="text-xs tracking-[.0416em] font-medium">bg-surfacedark-500</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="p-4 md:py-6 mb-24 md:mb-0 flex flex-col md:flex-row justify-center text-center">
+    <p>UI Design by <a class="text-primary-600 dark:text-primary-200 hover:underline md:mr-3" href="https://m3.material.io/" target="_blank">Google Material Design</a></p>
+    <p>Development by <a class="text-primary-600 dark:text-primary-200 hover:underline" href="https://twitter.com/ari_budin" target="_blank">Ari budin</a></p>
+  </footer>
+  <!-- tailmater javascript -->
+  <script src="src/js/tailmater.js"></script>
+</body>
+</html>
