@@ -25,11 +25,6 @@ Coming Soon
 Ari Budin  
 [@ari_budin](https://twitter.com/ari_budin)
 
-## Versions
-
-* V.1.0.0
-    * Initial Release
-
 ## Credits
 
 * [Material Design 3](https://m3.material.io/)
