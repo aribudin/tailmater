@@ -30,6 +30,10 @@ Coming Soon
 Ari Budin  
 [@ari_budin](https://twitter.com/ari_budin)
 
+## Support this project
+
+[Buy Me a Coffee](https://aribudin.gumroad.com/l/tailmater)
+
 ## Credits
 
 * [Material Design 3](https://m3.material.io/)
