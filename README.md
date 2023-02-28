@@ -1,7 +1,7 @@
 # Tailmater UI Kit
 <img src="src/img/tailmater-template.png" alt="Tailmater UI">
 
-Tailmater is an open source Modern Web Material 3 UI Kit based on Tailwind css framework. Built with [Material Design 3](https://m3.material.io/) the latest version of Google's open-source design system. Development by [@ari_budin](https://twitter.com/ari_budin)
+Tailmater is an open source Modern Web Material 3 UI Kit based on Tailwind css framework. Built with [Material Design 3](https://m3.material.io/) the latest version of Google's open-source design system. Tailmater use the MIT license so you can use it included in a commercial project. Credit to the Github page will always be appreciated. Development by [@ari_budin](https://twitter.com/ari_budin)
 
 ## Demo Preview
 
