@@ -29,10 +29,11 @@ Coming Soon
 
 [Download Figma design](https://www.figma.com/community/file/1035203688168086460)
 
-## Authors
+## Authors & Sponsors
 
-Ari Budin  
-[@ari_budin](https://twitter.com/ari_budin)
+* Ari Budin [@ari_budin](https://twitter.com/ari_budin)
+* Tailwind Dashboard [Taildash](https://tailwinddashboard.com/)
+* Tailwind Templates [Tailnet](https://themes.tailwindtemplate.net/)
 
 ## Support this project
 
