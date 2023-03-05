@@ -62,7 +62,7 @@ data-type="dialogs"  | data-target="#value"  | id="value"  | data-close="#value"
                     
 Type  | Call  | Target  | Role  | Class
 ------------- | ------------- | ------------- | ------------- | -------------
-data-type="dropdown"  | data-target="#value"  | id="value"  | role="dropdownmenu"  | show
+data-type="dropdown"  | data-target="#value"  | id="value"  | role="dropdownmenu"  | .show
 
 **Snackbar**
                     
