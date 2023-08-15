@@ -116,9 +116,9 @@ Target  | Status active
 * Tailwind Dashboard [Taildash](https://tailwinddashboard.com/)
 * Tailwind Templates [Tailnet](https://themes.tailwindtemplate.net/)
 
-## Support this project
-
-[Buy Me a Coffee](https://aribudin.gumroad.com/l/tailmater)
+## PRO VERSION
+<img src="src/img/cover-goodash.jpg" alt="Goodash Material Design Dashboard">
+[Goodash - Tailwind Material Design 3 Dashboard](https://aribudin.gumroad.com/l/goodash)
 
 ## Credits
 
