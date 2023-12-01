@@ -113,9 +113,9 @@ Target  | Status active
 
 ## PRO VERSION HTML, REACT, NEXT JS
 <img src="src/img/goodash-react.jpg" alt="Goodash React Dashboard">
-[Goodash - Tailwind Material Design 3 Dashboard](https://aribudin.gumroad.com/l/goodash)
-[Goodash React - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-react)
-[Goodash Next Js - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-next)
+* [Goodash - Tailwind Material Design 3 Dashboard](https://aribudin.gumroad.com/l/goodash)
+* [Goodash React - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-react)
+* [Goodash Next Js - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-next)
 
 ## Authors & Sponsors
 
