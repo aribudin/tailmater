@@ -1,7 +1,7 @@
 # Tailmater UI Kit
 <img src="src/img/tailmater-template.png" alt="Tailmater UI">
 
-Tailmater is an open source Modern Web Material 3 UI Kit based on Tailwind css framework. Built with [Material Design 3](https://m3.material.io/) the latest version of Google's open-source design system. Tailmater use the MIT license so you can use it included in a commercial project. Credit to the Github page will always be appreciated. Development by [@ari_budin](https://twitter.com/ari_budin) . Pro Version available [Goodash Html](https://aribudin.gumroad.com/l/goodash) . React Version available [Goodash React](https://aribudin.gumroad.com/l/goodash-react) .
+Tailmater is an open source Modern Web Material 3 UI Kit based on Tailwind css framework. Built with [Material Design 3](https://m3.material.io/) the latest version of Google's open-source design system. Tailmater use the MIT license so you can use it included in a commercial project. Credit to the Github page will always be appreciated. Development by [@ari_budin](https://twitter.com/ari_budin) . Pro Version available [Goodash Html](https://aribudin.gumroad.com/l/goodash) . React Version available [Goodash React](https://aribudin.gumroad.com/l/goodash-react) .  Next Js Version available [Goodash Next Js](https://aribudin.gumroad.com/l/goodash-next)
 
 ## Demo Preview
 
@@ -111,13 +111,11 @@ Target  | Status active
 [Download Figma design](https://www.figma.com/community/file/1035203688168086460)
 
 
-## PRO VERSION
-<img src="src/img/cover-goodash.jpg" alt="Goodash Material Design Dashboard">
-[Goodash - Tailwind Material Design 3 Dashboard](https://aribudin.gumroad.com/l/goodash)
-
-## REACT VERSION
+## PRO VERSION HTML, REACT, NEXT JS
 <img src="src/img/goodash-react.jpg" alt="Goodash React Dashboard">
+[Goodash - Tailwind Material Design 3 Dashboard](https://aribudin.gumroad.com/l/goodash)
 [Goodash React - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-react)
+[Goodash Next Js - Dashboard Material Design 3 & Tailwind Css](https://aribudin.gumroad.com/l/goodash-next)
 
 ## Authors & Sponsors
 
